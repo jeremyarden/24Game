@@ -15,8 +15,6 @@ def product(opr, x):
     return y
 
 def permute(numbers):
-    if len(numbers) == 0:
-        return []
     if len(numbers) == 1:
         return [numbers]
     x = []
@@ -58,7 +56,7 @@ def main():
     stop = timeit.default_timer()
     for solutions in res:
         print(solutions)
-    print(f"Runtime: {stop - start} seconds")
     print(f"{len(res)} solutions found for {inp[0]} {inp[1]} {inp[2]} {inp[3]}")
+    print(f"Runtime: {stop - start} seconds")
 
 main()
